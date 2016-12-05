@@ -7,7 +7,7 @@
         <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="coursesLoaded" on-refresh="refreshCourses()">
         </ion-refresher>
         <mm-loading hide-until="coursesLoaded">
-            <div style="background-color:#39cc7a;" class="list" ng-if="courses && courses.length > 5">
+            <div class="list" ng-if="courses && courses.length > 5">
                 <ion-input class="item item-input">
                     <i class="icon ion-funnel placeholder-icon"></i>
                     <input type="text" placeholder="{{ 'mm.courses.filtermycourses' | translate}}" ng-model="filter.filterText">
