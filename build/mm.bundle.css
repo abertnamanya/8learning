@@ -5387,6 +5387,7 @@ a.item-content {
  * --------------------------------------------------
  */
 .list {
+  background-color:#39cc7a;
   position: relative;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -5405,7 +5406,7 @@ a.item-content {
 .list-header {
   margin-top: 20px;
   padding: 5px 15px;
-  background-color:#39cc7a;
+  background-color: transparent;
   color: #222;
   font-weight: bold; }
 
