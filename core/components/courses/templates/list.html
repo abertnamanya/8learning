@@ -28,7 +28,7 @@
                 <div class="item mm-course-handlers" ng-show="course._handlers && course._handlers.length">
                     <div class="item tabs tabs-icon-top">
                         <a style="color:#39cc7a;" ng-repeat="handler in course._handlers | orderBy:'-priority'" ng-controller="handler.controller" ng-click="action($event, course)" class="tab-item active mm-courses-handler {{class}}" title="{{title | translate}}">
-                            <i class="icon {{icon}}"></i> {{title | translate}}
+                            <i style="color:#686262;" class="icon {{icon}}"></i> {{title | translate}}
                         </a>
                     </div>
                 </div>
