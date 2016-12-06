@@ -4218,7 +4218,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
     color: #444; }
 
 .item.tabs {
-  background-color:#39cc7a;
+  
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
