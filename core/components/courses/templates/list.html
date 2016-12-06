@@ -26,11 +26,11 @@
                     </p>
                 </div>
                 <div class="item mm-course-handlers" ng-show="course._handlers && course._handlers.length">
-                    <!-- <div class="item tabs tabs-icon-top">
-                        <a ng-repeat="handler in course._handlers | orderBy:'-priority'" ng-controller="handler.controller" ng-click="action($event, course)" class="tab-item active mm-courses-handler {{class}}" title="{{title | translate}}">
+                    <div class="item tabs tabs-icon-top">
+                        <a style="color:#39cc7a;" ng-repeat="handler in course._handlers | orderBy:'-priority'" ng-controller="handler.controller" ng-click="action($event, course)" class="tab-item active mm-courses-handler {{class}}" title="{{title | translate}}">
                             <i class="icon {{icon}}"></i> {{title | translate}}
                         </a>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="item text-center" ng-if="(!course._handlers || !course._handlers.length) && !areNavHandlersLoadedFor(course.id)">
                     <ion-spinner></ion-spinner>
