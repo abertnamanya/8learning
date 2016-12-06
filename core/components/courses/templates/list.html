@@ -13,11 +13,11 @@
                     <input type="text" placeholder="{{ 'mm.courses.filtermycourses' | translate}}" ng-model="filter.filterText">
                 </ion-input>
             </div>
-            <section style="background-color:#39cc7a;" ng-repeat="course in courses | filter:{fullname: filter.filterText}" class="list card">
-              <!--  <a class="item item-icon-right" ui-sref="site.mm_course({courseid: course.id, coursefullname: course.fullname})" title="{{course.fullname}}">
+            <section ng-repeat="course in courses | filter:{fullname: filter.filterText}" class="list card">
+               <a style="background-color:#39cc7a;" class="item item-icon-right" ui-sref="site.mm_course({courseid: course.id, coursefullname: course.fullname})" title="{{course.fullname}}">
                     <h2><mm-format-text watch="true">{{course.fullname}}</mm-format-text></h2>
                     <i class="icon icon-accessory ion-chevron-right"></i>
-                </a>-->
+                </a>
                 <div class="item item-text-wrap" ng-show="course.summary">
                     <p>
                         <summary>
